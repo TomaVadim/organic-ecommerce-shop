@@ -21,7 +21,7 @@ export const SubscribeOurNewletters = () => {
               type="text"
               placeholder="Your email address"
             />
-            <button className="px-10 -m-[1px] bg-primary rounded-full text-medium font-semibold text-white">
+            <button className="px-10 -m-[1px] bg-primary hover:bg-primary/85 rounded-full text-medium font-semibold text-white transition-colors duration-100">
               Subscribe
             </button>
           </div>
