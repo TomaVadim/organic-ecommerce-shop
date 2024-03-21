@@ -1,25 +1,22 @@
-import type { SelectWithOptions } from "@/features/header/types/navigation.type";
+import { Select } from "@/features/components/select/select";
+import type { SelectWithOption } from "@/features/header/types/navigation.type";
 
 interface Props {
-  navigation: SelectWithOptions[];
+  navigation: SelectWithOption[];
 }
 
 export const Navigation = ({ navigation }: Props) => {
   return (
     <nav>
       <ul className="flex gap-2 md:gap-8 items-center text-gray-600 text-small font-medium">
-        {navigation.map(({ id, name, options }) => (
+        {navigation.map(({ id, name }) => (
           <li key={id}>
-            <select
-              className="focus:outline-none hover:text-primary transition-colors duration-200 cursor-pointer"
-              defaultValue={name}
-            >
-              {options.map(({ id, name }) => (
-                <option key={id} value={name}>
-                  {name}
-                </option>
-              ))}
-            </select>
+            <Select
+              textSize="small"
+              textWeight="medium"
+              textColor="gray-600"
+              option={name}
+            />
           </li>
         ))}
         <li>

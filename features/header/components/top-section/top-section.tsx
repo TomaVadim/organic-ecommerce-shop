@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import mapIcon from "@/public/images/header/icons/map-pin.svg";
+import { Select } from "@/features/components/select/select";
 
 export const TopSection = () => {
   return (
@@ -15,28 +16,20 @@ export const TopSection = () => {
         </a>
 
         <div className="flex gap-5 items-center">
-          <select
-            defaultValue="Eng"
-            className="bg-transparent text-gray-300 text-tiny cursor-pointer focus:outline-none"
-          >
-            <option value="Eng">Eng</option>
-            <option value="Ua">Ua</option>
-          </select>
+          <Select option="Eng" />
 
-          <select
-            defaultValue="USD"
-            className="bg-transparent text-gray-300 text-tiny cursor-pointer focus:outline-none"
-          >
-            <option value="USD">USD</option>
-            <option value="UAH">UAH</option>
-          </select>
+          <Select option="USD" />
 
           <div className="bg-gray-700 h-4 w-[1px]"></div>
 
           <div className="flex gap-1 text-gray-300 text-tiny">
-            <button>Sign In</button>
+            <button className="hover:text-primary transition-colors duration-100">
+              Sign In
+            </button>
             <span>/</span>
-            <button>Sign Up</button>
+            <button className="hover:text-primary transition-colors duration-100">
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
