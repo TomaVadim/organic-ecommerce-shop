@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import notFoundImage from "@/public/images/error/images/not-found.jpg";
+import notFoundImage from "@/public/images/not-found/images/not-found.jpg";
 
 export default function NotFound() {
   return (
