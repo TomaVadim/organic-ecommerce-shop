@@ -37,7 +37,7 @@ export const Navigation = () => {
             <ul className="flex flex-col gap-3 text-small text-gray-400">
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   My Account
@@ -45,7 +45,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Order History
@@ -53,7 +53,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Shoping Cart
@@ -61,7 +61,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Wishlist
@@ -78,7 +78,7 @@ export const Navigation = () => {
             <ul className="flex flex-col gap-3 text-small text-gray-400">
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Contact
@@ -86,7 +86,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Faqs
@@ -94,7 +94,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Terms & Condition
@@ -102,7 +102,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Privacy Policy
@@ -119,7 +119,7 @@ export const Navigation = () => {
             <ul className="flex flex-col gap-3 text-small text-gray-400">
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   About
@@ -127,7 +127,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Shop
@@ -135,7 +135,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Product
@@ -143,7 +143,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Track Order
@@ -162,7 +162,7 @@ export const Navigation = () => {
             <ul className="flex flex-col gap-3 text-small text-gray-400">
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Fruit & Vegetables
@@ -170,7 +170,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Meat & Fish
@@ -178,7 +178,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Bread & Bakery
@@ -186,7 +186,7 @@ export const Navigation = () => {
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 focus-visible:bg-transparent"
                   href="#"
                 >
                   Beauty & Health
