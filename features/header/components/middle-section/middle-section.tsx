@@ -1,17 +1,14 @@
 import Image from "next/image";
 
-import brandLogo from "@/public/images/header/icons/brand-logo.svg";
 import searchLogo from "@/public/images/header/icons/search-icon.svg";
 import likeIcon from "@/public/images/header/icons/like-icon.svg";
 import bagIcon from "@/public/images/header/icons/bag-icon.svg";
+import { BrandLogo } from "@/features/components/brand-logo/brand-logo";
 
 export const MiddleSection = () => {
   return (
-    <section className="container gap-4 flex flex-col md:flex-row  md:justify-between py-7 tracking-wide">
-      <h3 className="flex items-center gap-2 text-gray-900 text-h5">
-        <Image src={brandLogo} alt="brand logo" width={32} height={29.06} />
-        <span>Ecobazar</span>
-      </h3>
+    <section className="container gap-4 flex flex-col lg:flex-row  lg:justify-between py-7 tracking-wide">
+      <BrandLogo />
 
       <div className="flex items-center h-[45px]">
         <div className="flex items-center gap-[10.5px] h-full px-4 border border-gray-500 border-r-0 rounded-l-md md:w-[400px]">
