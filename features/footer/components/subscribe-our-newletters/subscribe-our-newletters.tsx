@@ -3,7 +3,7 @@ import { SocialLinks } from "@/features/footer/components/social-links/social-li
 export const SubscribeOurNewletters = () => {
   return (
     <div className="bg-[#f7f7f7]">
-      <section className="container py-3 md:p-0 flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-12">
+      <section className="container py-3 flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-12">
         <div className="md:py-10 md:col-start-1 md:col-span-5">
           <h3 className="mb-1 text-grey-900 text-xxl font-semibold">
             Subcribe our Newsletter
