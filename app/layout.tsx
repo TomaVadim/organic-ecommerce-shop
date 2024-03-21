@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 
 import { Header } from "@/components/header/header";
+import { Footer } from "@/components/footer/footer";
+
+import "./globals.css";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -25,7 +27,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex flex-col h-svh`}>
         <Header />
         <main className="grow shrink-0">{children}</main>
-        <footer>footer</footer>
+        <Footer />
       </body>
     </html>
   );
