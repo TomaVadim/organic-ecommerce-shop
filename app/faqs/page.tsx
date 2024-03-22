@@ -5,8 +5,8 @@ import farmerImage from "@/public/images/faqs/images/farmer.jpg";
 
 export default function Faqs() {
   return (
-    <section className="relative py-10 lg:pb-0 lg:pt-20 container flex gap-16">
-      <div className="z-10 lg:flex-[50%] grow-0 flex flex-col justify-center gap-3">
+    <section className="lg:pb-0 lg:pt-20 container flex gap-16">
+      <div className="py-10 lg:pt-0 lg:flex-[50%] flex flex-col justify-center gap-3">
         <h1 className="mb-5 text-h5 text-center lg:text-start lg:text-h2 font-semibold text-gray-900">
           Welcome, Let’s Talk
           <br /> About Our Ecobazar
@@ -61,12 +61,8 @@ export default function Faqs() {
           </Accordion>
         </div>
       </div>
-      <div className="absolute mt-auto inset-0 z-0 lg:static lg:flex lg:items-end aspect-[741/808]">
-        <Image
-          className="opacity-50 lg:opacity-100"
-          src={farmerImage}
-          alt="farmer image"
-        />
+      <div className="hidden lg:flex lg:items-end aspect-[741/808]">
+        <Image src={farmerImage} alt="farmer image" />
       </div>
     </section>
   );
