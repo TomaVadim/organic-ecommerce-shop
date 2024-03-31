@@ -1,6 +1,4 @@
-"use client";
-
-import { ReactNode, SyntheticEvent, useState } from "react";
+import { ReactNode } from "react";
 
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import {
@@ -15,32 +13,31 @@ type Props = {
 };
 
 export const Accordion = ({ title, children }: Props): JSX.Element => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleChange = (_: SyntheticEvent, expanded: boolean) => {
-    setIsActive(expanded);
-  };
-
-  const borderColor = isActive ? "1px solid #00B207" : "none";
-  const textColor = isActive ? "#00B207" : "rgba(17, 24, 39, 0.9)";
-
   return (
     <MuiAccordion
-      onChange={handleChange}
       sx={{
-        borderRadius: "100%",
+        borderRadius: 1,
         "&.MuiPaper-root": {
           backgroundColor: "rgb(17, 24, 39, 0.05)",
           boxShadow: "none",
-          border: borderColor,
+          border: "none",
+        },
+        "&.Mui-expanded": {
+          border: "1px solid #00B207",
+        },
+        "&.Mui-expanded .MuiAccordionDetails-root": {
+          borderTop: "1px solid #00B207",
         },
       }}
     >
       <AccordionSummary
         className="text-medium font-medium"
         sx={{
-          borderRadius: "100%",
-          color: textColor,
+          color: "rgba(17, 24, 39, 0.9)",
+          "&.Mui-expanded": {
+            color: "#00B207",
+          },
+          borderRadius: 1,
         }}
         expandIcon={<AddCircleOutlineIcon />}
         aria-controls="panel1-content"
@@ -48,16 +45,7 @@ export const Accordion = ({ title, children }: Props): JSX.Element => {
       >
         {title}
       </AccordionSummary>
-      <AccordionDetails
-        sx={{
-          "&.MuiAccordionDetails-root": {
-            borderTop: borderColor,
-          },
-        }}
-        className="text-gray-600"
-      >
-        {children}
-      </AccordionDetails>
+      <AccordionDetails className="text-gray-600">{children}</AccordionDetails>
     </MuiAccordion>
   );
 };
