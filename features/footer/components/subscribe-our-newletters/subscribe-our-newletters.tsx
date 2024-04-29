@@ -1,4 +1,4 @@
-import { SocialLinks } from "@/features/footer/components/social-links/social-links";
+import { SocialLinks } from "@/features/components/social-links/social-links";
 
 export const SubscribeOurNewletters = () => {
   return (
@@ -27,7 +27,7 @@ export const SubscribeOurNewletters = () => {
           </div>
         </div>
 
-        <SocialLinks />
+        <SocialLinks defaultIconColor="gray-700" hoverIconColor="white" />
       </section>
     </div>
   );
