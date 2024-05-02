@@ -3,12 +3,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-import { TeamPlayer } from "@/features/about/types/team-player";
+import { TeamPlayer } from "@/features/about/shared/interfaces/team-player";
 import { TeamCard } from "@/features/about/components/team-card/team-card";
 import { ArrowNextSlide } from "@/public/images/about/icons/arrow-next-slide";
 import { ArrowPrevSlide } from "@/public/images/about/icons/arrow-prev-slide";
-import { BREAKPOINTS } from "@/features/about/components/our-team/breakpoints";
 import { SliderNavigationButton } from "@/features/about/components/slider-navigation-button/slider-navigation-button";
+import { OUR_TEAM_BREAKPOINTS } from "@/features/about/configs/our-team-breakpoints";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,7 +17,7 @@ interface Props {
   list: TeamPlayer[];
 }
 
-export const OurTeam = ({ list }: Props): JSX.Element => {
+export const OurTeamSlider = ({ list }: Props): JSX.Element => {
   return (
     <div className="container flex flex-col gap-5 md:flex-row items-center">
       <SliderNavigationButton className="prev">
@@ -28,7 +28,7 @@ export const OurTeam = ({ list }: Props): JSX.Element => {
         className="w-[88%]"
         pagination={{
           clickable: true,
-          el: ".pagination",
+          el: ".pagination-our-team",
           type: "bullets",
         }}
         modules={[Navigation, Pagination]}
@@ -36,7 +36,7 @@ export const OurTeam = ({ list }: Props): JSX.Element => {
           prevEl: ".prev",
           nextEl: ".next",
         }}
-        breakpoints={BREAKPOINTS}
+        breakpoints={OUR_TEAM_BREAKPOINTS}
       >
         {list.map(({ id, imageSrc, alt, teamPlayerName, role }) => (
           <SwiperSlide key={id}>
@@ -50,7 +50,7 @@ export const OurTeam = ({ list }: Props): JSX.Element => {
         ))}
       </Swiper>
 
-      <div className="pagination flex gap-2 justify-center [&>.swiper-pagination-bullet-active]:bg-primary md:hidden"></div>
+      <div className="pagination-our-team flex gap-2 justify-center [&>.swiper-pagination-bullet-active]:bg-primary md:hidden"></div>
 
       <SliderNavigationButton className="next">
         <ArrowNextSlide />

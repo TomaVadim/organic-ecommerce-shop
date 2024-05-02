@@ -1,4 +1,4 @@
-export const BREAKPOINTS = {
+export const CLIENT_TESTIMONAIL_BREAKPOINTS = {
   320: {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -10,9 +10,5 @@ export const BREAKPOINTS = {
   1024: {
     slidesPerView: 3,
     spaceBetween: 20,
-  },
-  1536: {
-    slidesPerView: 4,
-    spaceBetween: 24,
   },
 };
