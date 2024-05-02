@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Benefit } from "../../types/benefit";
+import { Benefit } from "../../shared/interfaces/benefit";
 
 interface Props {
   list: Benefit[];

@@ -17,7 +17,6 @@ export const FormFeedback = () => {
         className="mb-4 rounded border border-gray-200 px-4 py-[14px] focus:outline-primary"
         type="text"
         placeholder="Message"
-        autoFocus
       />
       <textarea
         className="mb-6 h-[98px] resize-none rounded border border-gray-200 px-4 py-[14px] focus:outline-primary"

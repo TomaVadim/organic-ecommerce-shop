@@ -1,4 +1,4 @@
-import { Benefit } from "@/features/about/types/benefit";
+import type { Benefit } from "@/features/about/shared/interfaces/benefit";
 import leafIcon from "@/public/images/about/icons/leaf-icon.svg";
 import supportIcon from "@/public/images/about/icons/support-icon.svg";
 import feedbackIcon from "@/public/images/about/icons/feedback-icon.svg";

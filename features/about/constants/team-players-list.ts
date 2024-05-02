@@ -1,4 +1,4 @@
-import { TeamPlayer } from "../types/team-player";
+import type { TeamPlayer } from "../shared/interfaces/team-player";
 import teamPlayer01 from "@/public/images/about/images/team-01.jpg";
 import teamPlayer02 from "@/public/images/about/images/team-02.jpg";
 import teamPlayer03 from "@/public/images/about/images/team-03.jpg";
