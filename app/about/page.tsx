@@ -6,13 +6,19 @@ import oldFarmerImage from "@/public/images/about/images/old-farmer.png";
 import { OurBenefits } from "@/features/about/components/our-benefits/our-benefits";
 import { ourBenefitsList } from "@/features/about/constants/our-benefits-list";
 import { BackgroundImage } from "@/features/about/components/background-image/background-image";
-import { Introducing } from "@/features/about/components/introducing/introducing";
-import { AboutOurBenefits } from "@/features/about/components/about-our-benefits/about-our-benefits";
+import { Introducing } from "@/components/public/about/introducing/introducing";
+import { AboutOurBenefits } from "@/components/public/about/about-our-benefits/about-our-benefits";
 
 import delivererImage from "@/public/images/about/images/deliverer.png";
-import { Delivering } from "@/features/about/components/delivering/delivering";
-import { OurTeam } from "@/features/about/components/our-team/our-team";
+import { Delivering } from "@/components/public/about/delivering/delivering";
+import { OurTeamSlider } from "@/components/public/about/our-team-slider/our-team-slider";
 import { teamPlayersList } from "@/features/about/constants/team-players-list";
+import { ClientTestimonailSlider } from "@/components/public/about/client-testimonail-slider/client-testimonail-slider";
+import { SliderNavigationButton } from "@/features/about/components/slider-navigation-button/slider-navigation-button";
+import { ArrowPrevSlide } from "@/public/images/about/icons/arrow-prev-slide";
+import { ArrowNextSlide } from "@/public/images/about/icons/arrow-next-slide";
+import { Partners } from "@/components/public/about/partners/partners";
+import { clientTestimonailList } from "@/features/about/constants/client-testimonail-list";
 
 export default function About() {
   return (
@@ -56,8 +62,36 @@ export default function About() {
             mi.
           </p>
 
-          <OurTeam list={teamPlayersList} />
+          <OurTeamSlider list={teamPlayersList} />
         </div>
+      </section>
+
+      <section className="bg-gray-100 w-full py-8 lg:py-24 tracking-wide">
+        <div className="mb-6 lg:mb-12 container flex justify-between items-center">
+          <h2 className="text-xxl lg:text-h2 font-semibold text-dark">
+            Client Testimonail
+          </h2>
+
+          <div className="flex gap-3">
+            <SliderNavigationButton className="prev-slide bg-white">
+              <ArrowPrevSlide />
+            </SliderNavigationButton>
+
+            <SliderNavigationButton className="next-slide bg-white">
+              <ArrowNextSlide />
+            </SliderNavigationButton>
+          </div>
+        </div>
+
+        <div className="container">
+          <ClientTestimonailSlider list={clientTestimonailList} />
+
+          <div className="mt-5 pagination-client-testimonail flex gap-2 justify-center [&>.swiper-pagination-bullet-active]:bg-primary md:hidden"></div>
+        </div>
+      </section>
+
+      <section className="hidden lg:block container py-20">
+        <Partners />
       </section>
     </div>
   );

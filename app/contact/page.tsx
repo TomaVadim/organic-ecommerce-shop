@@ -1,6 +1,6 @@
 import { Map } from "@/features/components/map/map";
 import { ContactsCard } from "@/features/contact/components/contacts-card/contacts-card";
-import { FormFeedback } from "@/features/contact/components/form-feedback/form-feedback";
+import { FormFeedback } from "@/components/public/contact/form-feedback/form-feedback";
 
 export default function Contact() {
   return (
